@@ -60,6 +60,7 @@ const UsersList = ({ setSelectedUsers }) => {
       }
     };
     fetchUsers();
+    //eslint-disable-next-line
   }, []);
 
   if (err) {
