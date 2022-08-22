@@ -12,6 +12,7 @@ import "./sass/main.scss";
 const client = StreamChat.getInstance(process.env.REACT_APP_STREAM_API_KEY);
 const cookies = new Cookies();
 const authToken = cookies.get("token");
+console.log(process.env.REACT_APP_PROD_SERVER_URL);
 
 if (authToken) {
   client.connectUser(
