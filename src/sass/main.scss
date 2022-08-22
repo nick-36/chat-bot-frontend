@@ -1,0 +1,48 @@
+@import "./base";
+@import "./variables";
+
+.channel-main__container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  height: 80vh;
+  margin: 1rem;
+}
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: $default-font-size;
+  border: none;
+  cursor: pointer;
+}
+.line {
+  border-bottom: 1px solid rgb(168, 166, 166);
+  margin: 2rem 0;
+}
+
+.str-chat.messaging {
+  background-color: transparent;
+}
+
+.str-chat {
+  background-color: none;
+  height: 100%;
+  border-radius: 18px;
+}
+
+.chat__container {
+  height: 100vh;
+}
+.str-chat .str-chat__textarea > textarea {
+  background-color: #cfe4fa;
+}
+
+.str-chat-channel.messaging .str-chat__main-panel {
+  padding: 0;
+  box-shadow: 1rem 1rem 1rem 0rem rgba(0, 0, 0, 0.15);
+}

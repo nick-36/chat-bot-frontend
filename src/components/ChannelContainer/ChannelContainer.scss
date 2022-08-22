@@ -1,0 +1,29 @@
+.channel__wrapper {
+  //  str-chat str-chat-channel
+  background-color: #f2f5f9;
+  height: 100%;
+  // border-radius: 18px;
+  border-radius: 180px;
+
+  margin: 0 1rem;
+  position: relative;
+
+  .channel__empty__container {
+    // background-color: rebeccapurple;
+    margin-top: auto;
+
+    justify-content: center;
+
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .channel__empty__text {
+    font-size: 1.4rem;
+    color: #777;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,34 @@
+.channel__search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  .channel__search-wrapper {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    margin: 1rem;
+    padding: 1rem 2rem;
+
+    border-radius: 40px;
+    background-color: #fff;
+  }
+  .search-icon {
+    font-size: 1.6rem;
+    color: #eee;
+  }
+  .search__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+  }
+
+  .btn-logout {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: #777;
+  }
+}

@@ -1,0 +1,28 @@
+.team-channel-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  background-color: #ffffff;
+
+  .team-channel-header {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    text-transform: capitalize;
+
+    &__user__info {
+      display: flex;
+      align-items: center;
+    }
+
+    &__right {
+    }
+
+    &__right-text {
+      margin-right: 1rem;
+      text-transform: capitalize;
+      color: #666;
+    }
+  }
+}

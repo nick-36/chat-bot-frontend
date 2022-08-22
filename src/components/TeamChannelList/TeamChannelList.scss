@@ -1,0 +1,18 @@
+.team__channel__list {
+  // background-color: cadetblue;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .header {
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon-add {
+    cursor: pointer;
+  }
+}

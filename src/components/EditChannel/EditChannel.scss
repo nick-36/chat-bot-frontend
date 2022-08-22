@@ -1,0 +1,27 @@
+.edit__channel {
+  padding: 2rem;
+  &__header {
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+
+  .icon-close {
+    // margin-right: 2rem;
+    font-size: 2rem;
+  }
+
+  .edit__channel__btn {
+    .btn-save {
+      display: flex;
+      margin-left: auto;
+      margin-top: 2rem;
+      background-color: #55c57a;
+      color: #f7f7f7;
+    }
+  }
+}

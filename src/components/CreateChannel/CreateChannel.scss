@@ -1,0 +1,55 @@
+.channel__create {
+  padding: 2rem;
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .icon-close {
+    font-size: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  .channel__create__btn {
+    .btn-create {
+      display: flex;
+      margin-left: auto;
+      margin-top: 2rem;
+      background-color: #55c57a;
+      color: #f7f7f7;
+    }
+  }
+}
+
+.channel {
+  &__form {
+    &__group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+    &__label {
+      font-size: 1.6rem;
+    }
+
+    &__input {
+      padding: 1rem;
+      width: 30%;
+      border: 1px solid #eee;
+      outline: none;
+      border-radius: 5px;
+      font-family: "Poppins", sans-serif;
+
+      &::placeholder {
+        font-family: inherit;
+      }
+    }
+  }
+
+  &__add__members {
+  }
+}

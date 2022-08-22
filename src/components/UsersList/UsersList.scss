@@ -1,0 +1,27 @@
+.user__list__container {
+  .user__list__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+  .user__list__items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .user__list__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .user__info {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .user__select {
+  }
+}

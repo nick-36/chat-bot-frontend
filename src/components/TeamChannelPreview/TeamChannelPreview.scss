@@ -1,0 +1,22 @@
+.channel__preview {
+  font-size: 1.4rem;
+  cursor: pointer;
+  .channel__preview__item {
+    // margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    text-transform: capitalize;
+    background-color: #fff;
+    color: #777;
+  }
+
+  .selected {
+    // margin: 1rem 0;
+
+    background-color: #aec4e7;
+    color: #161615;
+  }
+}
