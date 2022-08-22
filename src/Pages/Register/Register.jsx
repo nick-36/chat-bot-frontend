@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
+import { axiosDefault } from "../../axios.js";
 import "./Register.scss";
 
 const cookies = new Cookies();
@@ -44,10 +45,7 @@ const Register = () => {
       return;
     }
     try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_DEV_SERVER_URL}signup`,
-        form
-      );
+      const { data } = await axiosDefault.post("signup", form);
 
       console.log(data);
       const { token, userId, fullName, userName, hashedPassword } = data.user;

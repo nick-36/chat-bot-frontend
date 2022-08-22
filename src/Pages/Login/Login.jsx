@@ -1,7 +1,7 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
+import { axiosDefault } from "../../axios.js";
 import "./Login.scss";
 
 const cookies = new Cookies();
@@ -23,10 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        `${process.env.REACT_APP_DEV_SERVER_URL}login`,
-        user
-      );
+      const { data } = await axiosDefault.post("login", user);
       const { token, fullName, userId, userName, hashedPassword } = data.user;
 
       cookies.set("token", token);
